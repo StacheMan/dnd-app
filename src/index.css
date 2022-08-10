@@ -1,3 +1,34 @@
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin: 10px;
+  text-align: left;
+  text-justify: inter-word;
+  color:black
+}
+
+button {
+  background-color: rgb(202, 122, 17);
+  border-radius: 6px;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+  cursor: pointer;
+}
+
+#guts {
+height: 20px;
+width: 35px;
+padding: 5px;
+margin: 10px auto;
+border: 1px solid black;
+border-radius: 10px;
+font-size: 16px;
+color: black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
