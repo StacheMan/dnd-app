@@ -6,11 +6,13 @@ import "./dice";
 function App() {
   return (
     <div className="App">
-      <h1>DND Starting Character Rolls</h1>
-      <link rel="stylesheet" href="index.css" />
+      <head>
+        <h1>DND Starting Character Rolls</h1>
+        <link rel="stylesheet" href="index.css" />
+      </head>
       <body>
-        <p id="guts"></p>
-        <button id="button"> Roll</button>
+        <p id="guts" />
+        <button id="button"> Roll </button>
         <script src="dice.ts" />
         <script src="index.css" />
       </body>
