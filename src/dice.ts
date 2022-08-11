@@ -1,16 +1,16 @@
 
-const button = document.getElementById("button") as HTMLElement;
+const button = document.getElementById("button") as HTMLElement || {};
 
 const dice = {
-  sides: 20,
+  sides: 18,
   roll: function () {
-    const randomNumber = Math.floor(Math.random() * this.sides) + 1;
+    const randomNumber = Math.floor(Math.random() * this.sides) + 3;
     return randomNumber;
   }
 };
 
 function printNumber(number:any) {
-  var guts = document.getElementById("guts") as HTMLElement;
+  const guts = document.getElementById("guts") as HTMLElement;
   guts.innerHTML = number;
 };
 

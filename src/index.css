@@ -14,19 +14,20 @@ button {
   color: black;
   padding: 10px;
   text-transform: uppercase;
-  width: 200px;
+  width: 60px;
   cursor: pointer;
+  box-shadow: 12px 12px 8px -8px black;
 }
 
 #guts {
-height: 20px;
-width: 35px;
-padding: 5px;
-margin: 10px auto;
-border: 1px solid black;
-border-radius: 10px;
-font-size: 16px;
-color: black;
+  height: 20px;
+  width: 35px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  color: black;
 }
 
 /* body {
