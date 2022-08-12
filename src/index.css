@@ -1,3 +1,15 @@
+.list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.listImages {
+  width: 50px;
+  height: 50px;
+}
+
 h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
@@ -19,7 +31,7 @@ button {
   box-shadow: 12px 12px 8px -8px black;
 }
 
-#guts {
+.guts {
   height: 20px;
   width: 35px;
   padding: 5px;
@@ -27,7 +39,14 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 16px;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 780px) {
+  .listImages {
+    width: 25px;
+    height: 25;
+  }
 }
 
 /* body {

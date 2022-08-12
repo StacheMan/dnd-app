@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import "./index.css";
 import "./dice";
+import * as styles from "./index.css";
 
 function App() {
   return (
