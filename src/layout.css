@@ -1,0 +1,24 @@
+
+  html {
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+  }
+
+  body {
+    background-image:url('./assests/scroll.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  footer {
+    margin: 32px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 780px) {
+    /* .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    } */
+  }
