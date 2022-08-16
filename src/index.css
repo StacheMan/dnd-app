@@ -25,6 +25,10 @@ h1 {
   color:black;
 }
 
+p {
+  text-align: center;
+}
+
 button {
   background-color: rgb(150, 125, 101);
   border-radius: 6px;

@@ -21,7 +21,8 @@ export const DropdownWrapper = styled.form`
 `;
 
 export const StyledSelect = styled.select`
-  max-width: 20%;
+  align-self: center;
+  max-width: 10%;
   height: 100%;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
@@ -32,6 +33,7 @@ export const StyledOption = styled.option`
 `;
 
 export const StyledLabel = styled.label`
+  text-align: center;
   margin-bottom: 1rem;
 `;
 
