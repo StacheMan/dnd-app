@@ -1,6 +1,6 @@
 
   html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: fantasy;
     color:black;
   }
 
@@ -16,6 +16,12 @@
     margin: 32px 0;
     display: flex;
     justify-content: center;
+  }
+
+  section {
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
   }
 
   @media only screen and (max-width: 780px) {
