@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import "./dice";
 import Layout from "./layout";
 import Logo from "./assests/updatedlogo.png";
@@ -9,7 +9,7 @@ import { Dropdown, Option } from "./Dropdown";
 const styles = require("./index.css");
 
 function App() {
-  const [optionValue, setOptionValue] = useState("");
+  const [optionValue, setOptionValue] = React.useState("");
   const handleSelect = (x: any) => {
     console.log(x.target.value);
     setOptionValue(x.target.value);

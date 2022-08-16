@@ -20,8 +20,8 @@
 
   section {
     font-weight: bold;
-    justify-content: center;
-    text-align: center;
+    justify-content: normal;
+    text-align: match-parent;
   }
 
   @media only screen and (max-width: 780px) {
