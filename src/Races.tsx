@@ -3,6 +3,11 @@ import tieflingPic from "./assests/tiefling.png";
 import halforcPic from "./assests/halforc.png";
 import dragonbornPic from "./assests/dragonborn.png";
 import halfelfPic from "./assests/halfelf.png";
+import dwarfPic from "./assests/dwarf.png";
+import humanPic from "./assests/human.png";
+import elfPic from "./assests/elf.png";
+import gnomePic from "./assests/gnome.png";
+import halflingPic from "./assests/halfling.png";
 
 export function Tiefling(props: any) {
   const isClicked = props.isClicked;
@@ -37,6 +42,51 @@ export function HalfElf(props: any) {
   const isClicked = props.isClicked;
   if (isClicked) {
     return <img alt="halfelfPic" src={halfelfPic} height={150} width={200} />;
+  } else {
+    return null;
+  }
+}
+
+export function Dwarf(props: any) {
+  const isClicked = props.isClicked;
+  if (isClicked) {
+    return <img alt="dwarfPic" src={dwarfPic} height={150} width={200} />;
+  } else {
+    return null;
+  }
+}
+
+export function Gnome(props: any) {
+  const isClicked = props.isClicked;
+  if (isClicked) {
+    return <img alt="gnomePic" src={gnomePic} height={150} width={200} />;
+  } else {
+    return null;
+  }
+}
+
+export function Human(props: any) {
+  const isClicked = props.isClicked;
+  if (isClicked) {
+    return <img alt="humanPic" src={humanPic} height={150} width={200} />;
+  } else {
+    return null;
+  }
+}
+
+export function Halfling(props: any) {
+  const isClicked = props.isClicked;
+  if (isClicked) {
+    return <img alt="halflingPic" src={halflingPic} height={150} width={200} />;
+  } else {
+    return null;
+  }
+}
+
+export function Elf(props: any) {
+  const isClicked = props.isClicked;
+  if (isClicked) {
+    return <img alt="elfPic" src={elfPic} height={150} width={200} />;
   } else {
     return null;
   }
