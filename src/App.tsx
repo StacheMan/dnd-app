@@ -39,6 +39,7 @@ function App() {
         </Dropdown>
         <p> You've selected {optionValue}!</p>
       </section>
+      <span></span>
       <footer>
         <div className={styles.list}>
           <p id="guts" />

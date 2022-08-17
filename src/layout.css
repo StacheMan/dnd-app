@@ -24,6 +24,10 @@
     text-align: match-parent;
   }
 
+  span {
+    justify-content: center;
+  }
+
   @media only screen and (max-width: 780px) {
     /* .App-logo {
       animation: App-logo-spin infinite 20s linear;
