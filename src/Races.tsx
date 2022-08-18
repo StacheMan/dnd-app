@@ -1,4 +1,5 @@
 import React from "react";
+import { Option } from "./Dropdown";
 import tieflingPic from "./assests/tiefling.png";
 import halforcPic from "./assests/halforc.png";
 import dragonbornPic from "./assests/dragonborn.png";
@@ -8,6 +9,46 @@ import humanPic from "./assests/human.png";
 import elfPic from "./assests/elf.png";
 import gnomePic from "./assests/gnome.png";
 import halflingPic from "./assests/halfling.png";
+
+// export default function Races(props: any) {
+//   if (props.value === "Dwarf") {
+//     return (
+//       <img
+//         alt="dwarfPic"
+//         src={dwarfPic}
+//         height={300}
+//         width={400}
+//         style={{ alignSelf: "center" }}
+//       />
+//     );
+//   }
+
+//   if (props.value === "Elf") {
+//     return (
+//       <img
+//         alt="elfPic"
+//         src={elfPic}
+//         height={300}
+//         width={400}
+//         style={{ alignSelf: "center" }}
+//       />
+//     );
+//   }
+
+//   if (props.value === "Human") {
+//     return (
+//       <img
+//         alt="humanPic"
+//         src={humanPic}
+//         height={300}
+//         width={400}
+//         style={{ alignSelf: "center" }}
+//       />
+//     );
+//   }
+
+//   return null;
+// }
 
 export function Tiefling(props: any) {
   const isClicked = props.isClicked;

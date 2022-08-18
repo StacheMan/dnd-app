@@ -3,6 +3,7 @@ import "./dice";
 import Layout from "./layout";
 import Logo from "./assests/updatedlogo.png";
 import { Dropdown, Option } from "./Dropdown";
+// import dwarfPic from "./assests/dwarf.png";
 // import Rolls from "./assests/d20.png";
 // import * as styles from "./index.css";
 
@@ -37,9 +38,8 @@ function App() {
           <option value="Half Orc">Half Orc</option>
           <option value="Tiefling">Tiefling</option>
         </Dropdown>
-        <p> You've selected {optionValue}!</p>
+        <p>You've selected {optionValue}</p>
       </section>
-      <span></span>
       <footer>
         <div className={styles.list}>
           <p id="guts" />
