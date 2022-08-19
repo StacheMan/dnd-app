@@ -12,6 +12,30 @@
     background-position:inherit;
   }
 
+  a:link {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(87, 87, 87);
+    background-color: transparent;
+    text-decoration: italic;
+  }
+
+  a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
   footer {
     margin: 32px 0;
     display: flex;
@@ -19,12 +43,9 @@
   }
 
   section {
+    list-style-type: none;
     font-weight: bold;
-    text-align: match-parent;
-  }
-
-  span {
-    justify-content: center;
+    margin: 0 0 0 200px;
   }
 
   @media only screen and (max-width: 780px) {

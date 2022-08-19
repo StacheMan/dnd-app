@@ -2,19 +2,14 @@ import * as React from "react";
 import "./dice";
 import Layout from "./layout";
 import Logo from "./assests/updatedlogo.png";
-import { Dropdown, Option } from "./Dropdown";
+
 // import dwarfPic from "./assests/dwarf.png";
 // import Rolls from "./assests/d20.png";
-// import * as styles from "./index.css";
+import styles from "./index.css";
 
-const styles = require("./index.css");
+// const styles = require("./index.css");
 
 function App() {
-  const [optionValue, setOptionValue] = React.useState("");
-  const handleSelect = (x: any) => {
-    console.log(x.target.value);
-    setOptionValue(x.target.value);
-  };
   return (
     <Layout>
       <header>
@@ -26,19 +21,38 @@ function App() {
         </div>
       </header>
       <section>
-        <Dropdown formLabel="Choose a race" action="/" onChange={handleSelect}>
-          <Option />
-          <option value="Dwarf">Dwarf</option>
-          <option value="Elf">Elf</option>
-          <option value="Halfling">Halfling</option>
-          <option value="Human">Human</option>
-          <option value="Dragonborn">Dragonborn</option>
-          <option value="Gnome">Gnome</option>
-          <option value="Half Elf">Half Elf</option>
-          <option value="Half Orc">Half Orc</option>
-          <option value="Tiefling">Tiefling</option>
-        </Dropdown>
-        <p>You've selected {optionValue}</p>
+        <div className={styles.left}>
+          <div className={styles.list}>
+            <li className={styles.listItems}>
+              <a href="">Dwarf</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Elf</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Halfling</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Human</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Dragonborn</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Gnome</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Half Elf</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Half Orc</a>
+            </li>
+            <li className={styles.listItems}>
+              <a href="">Tiefling</a>
+            </li>
+          </div>
+        </div>
+        <div className={styles.right}></div>
       </section>
       <footer>
         <div className={styles.list}>
