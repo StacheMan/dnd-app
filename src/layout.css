@@ -2,6 +2,7 @@
   html {
     font-family: fantasy;
     color:black;
+    list-style-type: none;
   }
 
   body {
@@ -43,8 +44,12 @@
   }
 
   section {
-    justify-content: center;
-    align-self: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 0 0 300px;
+    padding: 20px;
+    column-count: 3;
+    flex-wrap: wrap;
   }
 
   @media only screen and (max-width: 780px) {

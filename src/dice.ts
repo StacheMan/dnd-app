@@ -1,22 +1,27 @@
+// import { Dice } from "dice-typescript";
 
-const button = document.getElementById("button") as HTMLElement || {};
+// const dice = new Dice ();
+// const result = dice.roll("1d20").total;
+// console.log(result);
 
-const dice = {
-  sides: 18,
-  roll: function () {
-    const randomNumber = Math.floor(Math.random() * this.sides) + 3;
-    return randomNumber;
-  }
-};
+// const button = document.getElementById("button") as HTMLButtonElement;
 
-function printNumber(number:any) {
-  const guts = document.getElementById("guts") as HTMLElement;
-  guts.innerHTML = number;
-};
+// const dice = {
+//   sides: 18,
+//   roll: function () {
+//     const randomNumber = Math.floor(Math.random() * this.sides) + 3;
+//     return randomNumber;
+//   }
+// };
 
-button.onclick = function () {
-  const result = dice.roll();
-  printNumber(result);
-};
+// function printNumber(number:any) {
+//   const guts = document.getElementById("guts") as HTMLElement;
+//   guts.innerHTML = number;
+// };
+
+// button.onclick = function () {
+//   const result = dice.roll();
+//   printNumber(result);
+// };
 
 export {};

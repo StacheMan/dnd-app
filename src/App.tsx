@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./dice";
 import Layout from "./layout";
 import Logo from "./assests/updatedlogo.png";
@@ -16,12 +16,6 @@ import tieflingPic from "./assests/tiefling.png";
 import styles from "./index.css";
 
 const App = () => {
-  const [selectedOption, setSelectedOption] = useState<String>();
-
-  const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const value = event.target.value;
-    setSelectedOption(value);
-  };
   return (
     <Layout>
       <header>
@@ -33,32 +27,69 @@ const App = () => {
         </div>
       </header>
       <section>
-        <div style={styles.container}>
-          <select onChange={selectChange} style={styles.select}>
-            <option selected disabled>
-              Choose a race
-            </option>
-            <option value={dwarfPic}>Dwarf</option>
-            <option value={elfPic}>Elf</option>
-            <option value={halflingPic}>Halfling</option>
-            <option value={humanPic}>Human</option>
-            <option value={dragonbornPic}>Dragonborn</option>
-            <option value={gnomePic}>Gnome</option>
-            <option value={halfelfPic}>Half Elf</option>
-            <option value={halforcPic}>Half Orc</option>
-            <option value={tieflingPic}>Tiefling</option>
-          </select>
-          {selectedOption && <h2 style={styles.result}>{selectedOption}</h2>}
+        <div style={styles.list}>
+          <li>
+            <button className={styles.selection} id="dwarf">
+              <img src={dwarfPic} alt="/" height={100} width={150} />
+              Dwarf
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="elf">
+              <img src={elfPic} alt="/" height={100} width={150} />
+              Elf
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="halfling">
+              <img src={halflingPic} alt="/" height={100} width={200} />
+              Halfling
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="human">
+              <img src={humanPic} alt="/" height={100} width={100} />
+              Human
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="dragonborn">
+              <img src={dragonbornPic} alt="/" height={100} width={200} />
+              Dragonborn
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="gnome">
+              <img src={gnomePic} alt="/" height={100} width={200} />
+              Gnome
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="half elf">
+              <img src={halfelfPic} alt="/" height={100} width={200} />
+              Half Elf
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="half orc ">
+              <img src={halforcPic} alt="/" height={100} width={200} />
+              Half Orc
+            </button>
+          </li>
+          <li>
+            <button className={styles.selection} id="tiefling">
+              <img src={tieflingPic} alt="/" height={100} width={200} />
+              Tiefling
+            </button>
+          </li>
         </div>
       </section>
       <footer>
         <div className={styles.list}>
           <p id="guts" />
-          <button className={styles.diceButton} id="diceButton">
-            Roll
-          </button>
           <script src="./dice.ts" />
           <script src="./index.css" />
+          <button id="button">Roll</button>
         </div>
       </footer>
     </Layout>
