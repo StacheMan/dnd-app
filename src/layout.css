@@ -6,8 +6,8 @@
   }
 
   body {
-    background-color: black;
-    background-image:url('./assests/altscroll.png'), url('./assests/tabletop.png');
+    background-color: gray;
+    /* background-image:url('./assests/altscroll.png'), url('./assests/tabletop.png'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position:inherit;
